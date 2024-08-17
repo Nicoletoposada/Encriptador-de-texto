@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Avanzado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>🔐 Encriptador de Texto Supremo</h1>
+        <p>Escribe tu texto y selecciona la opción que deseas:</p>
+        
+        <textarea id="inputText" placeholder="Escribe tu texto aquí..." spellcheck="false"></textarea>
+        
+        <div class="botones">
+            <button onclick="encriptarTexto()">🔐 Encriptar</button>
+            <button onclick="desencriptarTexto()">🔓 Desencriptar</button>
+            <button id="copyButton" onclick="copiarTexto()">📋 Copiar</button>
+        </div>
+        
+        <textarea id="outputText" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+        <div id="notification" class="hidden">¡Texto copiado al portapapeles! 📋</div>
+        <div id="progressBar" class="progress hidden"></div>
+    </div>
+
+    <img src="./assets/Logo NPG.png" alt="Imagen Izquierda" class="imagen-izquierda">
+    <img src="./assets/Inge.png" alt="Imagen Derecha" class="imagen-derecha">
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Diseño global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2b2b2b, #000000);
+    color: #f0e130;
+    transition: all 0.5s ease;
+}
+
+.contenedor {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #f0e130;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #f0e130;
+    background-color: #1f1f1f;
+    color: #f0e130;
+    font-size: 18px;
+    resize: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ff6b6b;
+}
+
+.botones {
+    margin: 15px 0;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0e130;
+    color: #2b2b2b;
+}
+
+#notification {
+    background-color: #34c759;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: none;
+}
+
+#notification.visible {
+    display: inline-block;
+}
+
+#progressBar {
+    width: 0;
+    height: 10px;
+    background-color: #ff6b6b;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: width 0.5s ease;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.imagen-izquierda {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.imagen-derecha {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 500px;
+    height: 500px;
+}
